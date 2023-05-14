@@ -17,6 +17,7 @@ ______________________________
 That said, let us dive into the main purpose of this article.
 ______________________________
 ![cover-photo](images/cover-photo.png)
+_________________________________
 
 ## PREREQUISITES
 To follow this tutorial, you need
