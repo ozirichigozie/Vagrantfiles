@@ -1,4 +1,4 @@
-# Vagrantfiles for Home Labs
+# Vagrantfiles for Virtual Home Labs
 
 ## Introduction
 Learning how to set up a home lab where you can practise some System Admin, Cloud and DevOps engineering skills is essential to your growth as a software engineer. You may use the platforms of Cloud service providers for practice; for example, 
@@ -6,9 +6,17 @@ Learning how to set up a home lab where you can practise some System Admin, Clou
 - [Google Cloud Platform](https://cloud.google.com) (GCP) gives you $300 free credit on signup to use their services for 30 days.
 - On sign up, [Microsoft Azure](https://azure.microsoft.com) will give you $200 in credit to use their services for 30 days.
 - [Linode](https://www.linode.com) gives you $100 free credit to use their services when you signup using the promo code of any of Linode's YouTube influencers. 
-As a learner, I'll encourage you to create an account with each of these cloud providers. This will increase your exposure as a developers by giving you hands-on experience working with these platforms. However, to greatly minimize cost especially since you are not yet earning from your practise, it becomes needful to set up home labs. Setting up home labs in your local machine will ensure you can practise at any time with the fear of accruing cost of using cloud services.
+
+___________________________________
+
+As a learner, I'll encourage you to create an account with each of these cloud providers to increase your exposure as a developer by giving yourself hands-on experience working with these platforms. However, setting up a home lab on your local machine will enable you 
+- greatly minimize cost especially since you are not yet earning from your practise, 
+- practise more often without the fear of accruing cost of using cloud services.
+______________________________
 
 That said, let us dive into the main purpose of this article.
+______________________________
+![cover-photo](images/cover-photo.png)
 
 ## PREREQUISITES
 To follow this tutorial, you need
