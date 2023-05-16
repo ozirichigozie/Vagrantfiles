@@ -9,11 +9,10 @@ Vagrant.configure("2") do |config|
     (1..UBUNTU_NODES).each do |i|
         config.vm.define "ubuntu-node-#{i}" do |ubuntunode|
             ubuntunode.vm.box = IMAGE_NAME
-            ubuntunode.vm.network "private_network", ip: "192.168.43.#{i + 20}", virtualbox__intnet: "intnet"
+            ubuntunode.vm.network "private_network", ip: "192.168.43.#{i + 20}"
 
             # naming the virtualmachine
             ubuntunode.vm.hostname = "ubuntu-node-#{i}"
-
             ubuntunode.vm.provider :virtualbox do |vb|
                 vb.name = "ubuntu-node-#{i}"
                 vb.memory = 1024
@@ -26,11 +25,10 @@ Vagrant.configure("2") do |config|
 
     config.vm.define "ubuntu-control" do |ubuntucontrol|
         ubuntucontrol.vm.box = IMAGE_NAME
-        ubuntucontrol.vm.network "private_network", ip: "192.168.43.11", virtualbox__intnet: "intnet"
+        ubuntucontrol.vm.network "private_network", ip: "192.168.43.11"
 
         # naming the virtualmachine
         ubuntucontrol.vm.hostname = "ubuntu-control"
-
         ubuntucontrol.vm.provider :virtualbox do |vb|
             vb.name = "ubuntu-control"
             vb.memory = 2048

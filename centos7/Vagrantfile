@@ -9,10 +9,11 @@ Vagrant.configure("2") do |config|
     (1..CENTOS_NODES).each do |i|
         config.vm.define "centos-node-#{i}" do |centosnode|
             centosnode.vm.box = IMAGE_NAME
-            centosnode.vm.network "private_network", ip: "192.168.43.#{i + 60}", virtualbox__intnet: "intnet"
-            centosnode.vm.hostname = "centos-node-#{i}"
+            centosnode.vm.network "private_network", ip: "192.168.43.#{i + 60}"
 
             # naming the virtualmachine
+            centosnode.vm.hostname = "centos-node-#{i}"
+
             centosnode.vm.provider :virtualbox do |vb|
                 vb.name = "centos-node-#{i}"
                 vb.memory = 1024
@@ -24,12 +25,10 @@ Vagrant.configure("2") do |config|
 
     config.vm.define "centos-control" do |centoscontrol|
         centoscontrol.vm.box = IMAGE_NAME
-        centoscontrol.vm.network "private_network", ip: "192.168.43.51", virtualbox__intnet: "intnet"
-
+        centoscontrol.vm.network "private_network", ip: "192.168.43.51"
                 
         # naming the virtualmachine
         centoscontrol.vm.hostname = "centos-control"
-
         centoscontrol.vm.provider :virtualbox do |vb|
             vb.name = "centos-control"
             vb.memory = 2048
