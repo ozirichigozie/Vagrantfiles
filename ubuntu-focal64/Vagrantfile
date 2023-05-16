@@ -1,7 +1,7 @@
 IMAGE_NAME = "ubuntu/focal64"
 
 # Creating two nodes. Change this according to the number of nodes you want to create
-UBUNTU_NODES = 2
+UBUNTU_NODES = 3
 
 Vagrant.configure("2") do |config|
     config.ssh.insert_key = false
